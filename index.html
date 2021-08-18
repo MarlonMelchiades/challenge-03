@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKIpHmfsL1Z_cTTa8WD0Ucn1BhhpOvPX3tXnQhOQ0pT6F9KKXcSPVD6B1QOYQgRg7zZE&usqp=CAU" />
+    <title>Challenges #03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header class="bg-dark text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Challenge #03
+      </div>
+      <div class="container p-4 pb-0">
+        <section class="pb-4">
+          <p>Eai, beleza?</br>Aqui vão alguns Challenges feitos por Marlon Melchiades, com JavaScript puro!</br>Foi muito divertido fazer eles! </br> Esse é o #03 de #10. Veja e se divirta também! (vai que você ache algo útil aqui pra você!) ㋡</p>
+        </section>
+      </div>
+    </header>
+    <main class="container">
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 21
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ano bissexto? &#128197; </h5>
+            <p class="card-text">Você sabe o que é ano bissexto? É o ano ao qual é acrescentado um dia extra! Quer saber se tal ano é bissexto?Escolhe um ano ai que eu te falo! </p>
+            <div class="input-group mb-3">
+              <input id="ano-step21" type="text" placeholder="Ano" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step21" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step21"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Saber se o ano é bissexto nem é tão interessante assim. ¯\_(ツ)_/¯
+          </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 22
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">I WANT YOU!  	
+              &#128680;</h5>
+            <p class="card-text">Já fez 18 anos? Já se alistou? Quer saber quanto tempo falta ou se já faz tempo que você se alistou? Me diz sua data de nascimento pra gente ver!</p>
+            <div class="input-group mb-3">
+              <input id="data-step22" type="date" class="form-control" aria-label="number">
+              <button id="botao-step22" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step22"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Viva a paz, não faça guerra!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 23
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Viva as mulheres! &#127800;</h5>
+            <p class="card-text">Nossa loja está com uma baita promoção hoje! Descontão bem legal de 5% para homens e 13% para mulheres! </p>
+            <input id="nome-step23" type="text" placeholder="Seu nome" class="form-control" aria-label="name">
+            <select id="genero-step23" class="form-select mt-1" aria-label="select Gênero">
+              <option selected disabled>Gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
+            <div class="input-group mt-1 mb-3">
+              <span class="input-group-text">R$</span>
+              <input id="preco-step23" type="text" placeholder="Valor" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step23" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step23"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Desconto legal demais!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 24
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Quer uma passagem aí? &#128669;</h5>
+            <p class="card-text">Nossa empresa de aviação alterou alguns preços e viemos te avisar!</br> Viagem até 200Km fica R$0,50 por Km e acima de 200km fica R$0,45. Coloque a distância abaixo que queira viajar pra saber o preço!</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Km</span>
+              <input id="kilometros-step24" type="text" onkeyup="somenteNumerosStep24(this);" class="form-control" aria-label="number">
+              <button id="botao-step24" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step24"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Acho melhor você viajar com a gente, em?!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 25
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Matemática de novo não! &#128553;</h5>
+            <p class="card-text">Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros lados. Me passa três valores que eu analiso isso pra você!</p>
+            <div class="input-group mb-3">
+              <input id="valorA-step25" type="text" placeholder="Seg A" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorB-step25" type="text" placeholder="Seg B" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorC-step25" type="text" placeholder="Seg C" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step25" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step25"></span>
+          </div>
+          <div class="card-footer text-muted">
+            É um pouco confuso, mas acho que você entendeu.
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 26
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Uma verificação básica agora, ok? &#129488;</h5>
+            <p class="card-text">Bem tranquilo, vou pedir só dois número agora, e vou te dizer qual é o maior ou se são iguais!</p>
+            <div class="input-group mb-3">
+              <input id="numA-step26" type="text" placeholder="Num A" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="numB-step26" type="text" placeholder="Num B" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step26" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step26"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Uma tranquilinha pelo menos!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 27
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Outra vez aqui, professor(a)? &#128218;</h5>
+            <p class="card-text">Agora, vamos analisar outra vez a média do aluno, que nem no Challenge #02-step19. Porém, agora ele tem chance de recuperação. Quer ver se ele ficou de recuperação, reprovou ou passou de ano?</p>
+            <input id="nome-step27" type="text" placeholder="Nome do aluno" class="form-control mb-2" aria-label="number">
+            <div class="input-group mb-3">
+              <input id="nota1-step27" type="text" placeholder="Nota 1" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="nota2-step27" type="text" placeholder="Nota 2" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step27" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step27"></span>
+          </div>
+          <div class="card-footer text-muted">
+            A prova de recuperação vai ser quando, professor(a)?
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 28
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Quer comprar um terreno? &#127974;</h5>
+            <p class="card-text">Estamos com alguns terrenos vendendo aqui. Temos três tipos de terreno: POPULAR, MASTER E VIP. Coloque a largura e o comprimento que você quer pra saber qual tipo de terreno é o seu!</p>
+            <div class="input-group mb-3">
+              <input id="largura-step28" type="text" placeholder="Largura" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="comprimento-step28" type="text" placeholder="Comprimento" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step28" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step28"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Conseguiu um terreno VIP? Se sim, parabéns em!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 29
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Reajuste salarial, pessoal! &#128176;</h5>
+            <p class="card-text">Novo reajuste de salário. Quem trabalha aqui a menos de 3 anos vai ter um aumento de 3%, quem trabalha entre 3 e 10 anos, aumento de 12.5% e mais de 10 anos vai ter um aumento de 20%, ok?!</p>
+            <input id="nome-step29" type="text" placeholder="Nome do funcionário" class="form-control mb-1" aria-label="number">
+            <div class="input-group mb-1">
+              <span class="input-group-text">R$</span>
+              <input id="salario-step29" type="text" placeholder="Salário" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <input id="anos-step28" type="text" placeholder="Anos trabalhados" onkeyup="somenteNumeros(this);" class="form-control mb-3" aria-label="number">
+            <button id="botao-step29" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step29"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Agora tem grana pra gastar!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 30
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Geometria, você curte? &#128214;</h5>
+            <p class="card-text">Agora, que nem no step 25, você vai colocar três valores, e, além de ver se pode ser um triângulo, vou te falar qual tipo de triângulo ele é!</p>
+            <div class="input-group mb-3">
+              <input id="valorA-step30" type="text" placeholder="Seg A" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorB-step30" type="text" placeholder="Seg B" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorC-step30" type="text" placeholder="Seg C" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step30" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step30"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Eu acho geometria legal, e você?
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 25px;" class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/marlonendjr" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+55(25)953459207&text=sua%20mensagem" role="button">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/marlon-melchiades/" role="button">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MarlonMelchiades" role="button">
+            <i class="bi-github" role="img" aria-label="GitHub"></i>
+          </a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <i class="bi bi-envelope"></i> marlonendrigosilva@gmail.com
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
